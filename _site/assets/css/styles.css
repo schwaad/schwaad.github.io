@@ -104,5 +104,5 @@ body{
   
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: #0C0C0C; }
   }
