@@ -94,7 +94,8 @@ body{
     letter-spacing: .15em; 
     animation: 
       typing 4s steps(15, end),
-      blink-caret .75s step-end infinite;
+      blink-caret .75s step-end infinite,
+      disappear-caret 0s 4s forwards;
   }
 
   @keyframes typing {
@@ -105,4 +106,10 @@ body{
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #0C0C0C; }
+  }
+
+  @keyframes disappear-caret{
+    0%{border-color: #0C0C0C}
+    99%{border-color: #0C0C0C}
+    100%{border-color: transparent}
   }
